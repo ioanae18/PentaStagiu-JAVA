@@ -47,8 +47,7 @@ public class AirportManager {
     //Add / Remove / Read users to a flight user list
     public void addUserToFlight(User user, Flight flight) {
         flight.addUser(user);
-        //adding the passengers that I made in main to the List<User> passengers
-//        addPassenger(user);
+//        addUser(user);
     }
 
     public void removeUserFromFlight(User user, Flight flight) {
