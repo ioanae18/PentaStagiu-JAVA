@@ -5,7 +5,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class User {
+public class User{
     String fname;
     String lname;
     Date birthDate;
@@ -21,11 +21,10 @@ public class User {
         }
     }
 
-    public User(String fname, String lname, Date birthDate, DateFormat df) {
+    public User(String fname, String lname, Date birthDate) {
         this.fname = fname;
         this.lname = lname;
-        this.birthDate = birthDate;
-        this.df = df;
+        setBirthDate(birthDate);
     }
 
     public String getFname() {

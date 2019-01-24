@@ -103,22 +103,7 @@ public class Flight {
         this.df = df;
     }
 
-    public void removeUser(User user){
-        if (users.size() == 0){
-            System.out.println("There are no users to be removed!");
-            return;
-        }
-
-        Iterator<User> userIterator = users.iterator();
-        while (userIterator.hasNext()){
-            if (userIterator.next().equals(user)){
-                userIterator.remove();
-                System.out.println("The user: " + user.getFullName() + "was removed from the flight: " + getName());
-                return;
-            }
-        }
-    }
-
+    //Add / Remove / Read users
     public void addUser(User user){
         if (users.size() >= maxUserCapacity){
             System.out.println("The maximum capacity at flight: " + this.name + " was reached!");
@@ -135,4 +120,29 @@ public class Flight {
         users.add(user);
         System.out.println("User: " + user.getFullName() + " was successfuly added to the flight: " + this.name);
     }
+
+    public void removeUser(User user){
+        if (users.size() == 0){
+            System.out.println("There are no users to be removed!");
+            return;
+        }
+
+        Iterator<User> userIterator = users.iterator();
+        while (userIterator.hasNext()){
+            if (userIterator.next().equals(user)){
+                userIterator.remove();
+                System.out.println("The user: " + user.getFullName() + "was successfuly removed from the flight: " + getName());
+                return;
+            }
+        }
+    }
+
+    public void readUsers(){
+        System.out.println("The passengers list is: ");
+        for (User u: users) {
+            System.out.println(u.getFullName());
+        }
+    }
+
+
 }

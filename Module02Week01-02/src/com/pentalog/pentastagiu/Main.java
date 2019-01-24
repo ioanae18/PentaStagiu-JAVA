@@ -18,8 +18,11 @@ Update flight status based on departure date / flight duration
  */
 package com.pentalog.pentastagiu;
 
+import com.pentalog.pentastagiu.User;
+
 public class Main {
 
     public static void main(String[] args) {
+
     }
 }
