@@ -7,6 +7,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.lang.String;
 import java.text.ParseException;
+import java.util.Iterator;
 
 enum StatusEnum{
     SCHEDULED,
@@ -102,5 +103,36 @@ public class Flight {
         this.df = df;
     }
 
+    public void removeUser(User user){
+        if (users.size() == 0){
+            System.out.println("There are no users to be removed!");
+            return;
+        }
 
+        Iterator<User> userIterator = users.iterator();
+        while (userIterator.hasNext()){
+            if (userIterator.next().equals(user)){
+                userIterator.remove();
+                System.out.println("The user: " + user.getFullName() + "was removed from the flight: " + getName());
+                return;
+            }
+        }
+    }
+
+    public void addUser(User user){
+        if (users.size() >= maxUserCapacity){
+            System.out.println("The maximum capacity at flight: " + this.name + " was reached!");
+            return;
+        }
+
+        for (User s: users){
+            if (s.equals(user)){
+                System.out.println("This user: " + user.getFullName() + " is already added to the flight: " + this.name);
+//                return;
+            }
+        }
+
+        users.add(user);
+        System.out.println("User: " + user.getFullName() + " was successfuly added to the flight: " + this.name);
+    }
 }

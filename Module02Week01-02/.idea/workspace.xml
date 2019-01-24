@@ -4,6 +4,7 @@
     <list default="true" id="86a260a4-40dc-42f5-8d18-9d4fcafa6ce8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Module01Week04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Module01Week04/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Module01Week04/src/com/pentalog/pentastagiu/StrategyGame/Artifact.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module01Week04/src/com/pentalog/pentastagiu/StrategyGame/Artifact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pentalog/pentastagiu/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pentalog/pentastagiu/Flight.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/pentalog/pentastagiu/Flight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
+            <state relative-caret-position="-1508">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1291#1292#0" expanded="true" />
@@ -63,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pentalog/pentastagiu/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -89,6 +90,15 @@
                 <element signature="e#295#296#0" expanded="true" />
                 <element signature="e#357#358#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../PentaStagiu-JAVA/Webinar/Mod2Week1/src/com/company/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -160,7 +170,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548349993059" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548352132927" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -222,17 +232,52 @@
     <entry file="file://$PROJECT_DIR$/../../../PentaStagiu-JAVA/Webinar/Mod2Week1/Mod2Week1.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pentalog/pentastagiu/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../../PentaStagiu-JAVA/Webinar/Mod2Week1/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="257">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pentalog/pentastagiu/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1298#1299#0" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pentalog/pentastagiu/Flight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="-1508">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1291#1292#0" expanded="true" />
@@ -263,41 +308,6 @@
             <element signature="e#2324#2325#0" expanded="true" />
             <element signature="e#2364#2365#0" expanded="true" />
             <element signature="e#2392#2393#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pentalog/pentastagiu/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pentalog/pentastagiu/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1233#1234#0" expanded="true" />
-            <element signature="e#1258#1259#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
-            <element signature="e#1326#1327#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
           </folding>
         </state>
       </provider>
