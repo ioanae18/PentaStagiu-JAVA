@@ -1,13 +1,20 @@
 package com.pentalog.pentastagiu;
 
+import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-public class AirportManager {
+public class AirportManager extends Flight{
 
     List<User> users = new ArrayList<>();
     List<Flight> flights = new ArrayList<>();
+
+    public AirportManager(String name, String destination, Date departureDate, int flightDuration, int maxUserCapacity,
+                          StatusEnum status, DateFormat df) {
+        super(name, destination, departureDate, flightDuration, maxUserCapacity, status, df);
+    }
 
     //Add / Remove / Read flights
     public void addFlight(Flight flight){
@@ -47,7 +54,7 @@ public class AirportManager {
     //Add / Remove / Read users to a flight user list
     public void addUserToFlight(User user, Flight flight) {
         flight.addUser(user);
-//        addUser(user);
+        addUser(user);
     }
 
     public void removeUserFromFlight(User user, Flight flight) {

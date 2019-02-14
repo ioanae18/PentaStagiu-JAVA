@@ -16,14 +16,55 @@ enum StatusEnum{
 }
 
 public class Flight {
-    String name;
-    String destination;
-    Date departureDate;
-    int flightDuration;
-    int maxUserCapacity;
-    StatusEnum status;
+    private String name;
+    private String destination;
+    private Date departureDate;
+    private int flightDuration;
+    private int maxUserCapacity;
+    private StatusEnum status;
 
     List<User> users = new ArrayList<>();
+
+    //Add / Remove / Read users
+    public void addUser(User user){
+        if (users.size() >= maxUserCapacity){
+            System.out.println("The maximum capacity at flight: " + this.name + " was reached!");
+            return;
+        }
+
+        for (User s: users){
+            if (s.equals(user)){
+                System.out.println("This user: " + user.getFullName() + " is already added to the flight: " + this.name);
+//                return;
+            }
+        }
+
+        users.add(user);
+        System.out.println("User: " + user.getFullName() + " was successfuly added to the flight: " + this.name);
+    }
+
+    public void removeUser(User user){
+        if (users.size() == 0){
+            System.out.println("There are no users to be removed!");
+            return;
+        }
+
+        Iterator<User> userIterator = users.iterator();
+        while (userIterator.hasNext()){
+            if (userIterator.next().equals(user)){
+                userIterator.remove();
+                System.out.println("The user: " + user.getFullName() + "was successfuly removed from the flight: " + getName());
+                return;
+            }
+        }
+    }
+
+    public void readUsers(){
+        System.out.println("The passengers list is: ");
+        for (User u: users) {
+            System.out.println(u.getFullName());
+        }
+    }
 
     DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
     void setDate(String dateformat) {
@@ -94,55 +135,4 @@ public class Flight {
     public void setStatus(StatusEnum status) {
         this.status = status;
     }
-
-    public DateFormat getDf() {
-        return df;
-    }
-
-    public void setDf(DateFormat df) {
-        this.df = df;
-    }
-
-    //Add / Remove / Read users
-    public void addUser(User user){
-        if (users.size() >= maxUserCapacity){
-            System.out.println("The maximum capacity at flight: " + this.name + " was reached!");
-            return;
-        }
-
-        for (User s: users){
-            if (s.equals(user)){
-                System.out.println("This user: " + user.getFullName() + " is already added to the flight: " + this.name);
-//                return;
-            }
-        }
-
-        users.add(user);
-        System.out.println("User: " + user.getFullName() + " was successfuly added to the flight: " + this.name);
-    }
-
-    public void removeUser(User user){
-        if (users.size() == 0){
-            System.out.println("There are no users to be removed!");
-            return;
-        }
-
-        Iterator<User> userIterator = users.iterator();
-        while (userIterator.hasNext()){
-            if (userIterator.next().equals(user)){
-                userIterator.remove();
-                System.out.println("The user: " + user.getFullName() + "was successfuly removed from the flight: " + getName());
-                return;
-            }
-        }
-    }
-
-    public void readUsers(){
-        System.out.println("The passengers list is: ");
-        for (User u: users) {
-            System.out.println(u.getFullName());
-        }
-    }
-
-
 }
