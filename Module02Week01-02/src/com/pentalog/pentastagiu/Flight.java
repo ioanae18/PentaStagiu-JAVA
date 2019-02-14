@@ -25,7 +25,7 @@ public class Flight {
 
     List<User> users = new ArrayList<>();
 
-    //Add / Remove / Read users
+    //Add users
     public void addUser(User user){
         if (users.size() >= maxUserCapacity){
             System.out.println("The maximum capacity at flight: " + this.name + " was reached!");
@@ -43,6 +43,7 @@ public class Flight {
         System.out.println("User: " + user.getFullName() + " was successfuly added to the flight: " + this.name);
     }
 
+    //Remove users
     public void removeUser(User user){
         if (users.size() == 0){
             System.out.println("There are no users to be removed!");
@@ -59,6 +60,7 @@ public class Flight {
         }
     }
 
+    //Read users
     public void readUsers(){
         System.out.println("The passengers list is: ");
         for (User u: users) {
@@ -66,8 +68,17 @@ public class Flight {
         }
     }
 
+    public Boolean checkUsersList(String name) {
+        for (User u: users) {
+            if (u.getFullName().equalsIgnoreCase(name)){
+                return true;
+            }
+        }
+        return false;
+    }
+
     DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
-    void setDate(String dateformat) {
+    Date setDate() {
         String strDate = "24-01-2019 19:06:45";
         try {
             Date newdate = df.parse(strDate);
@@ -75,6 +86,7 @@ public class Flight {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
     public Flight(String name, String destination, Date departureDate, int flightDuration, int maxUserCapacity, StatusEnum status,
